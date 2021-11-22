@@ -1,1 +1,0 @@
-\beamer@sectionintoc {1}{Stock Price Prediction - Autonomous Trading}{13}{0}{1}

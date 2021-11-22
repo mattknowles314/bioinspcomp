@@ -1,0 +1,33 @@
+\section{Mathematical Background I: Activation}
+We first look at the mathematical background behind the neural network. Assume we have $k$ hidden layers, sandwiched by 
+an input layer and an output layer. Since the aim of neural networks is to model how a brain processes information, we often refer
+to the connections between nodes in each layer as ``synapses''. Theses synapses are characterised by their weights and biases. Let $W^{(l)}$ be the 
+matrix containing the weights between layer $l$ and $l-1$. If layer l has n nodes, and $l-1$ has m nodes, then we have:
+\begin{equation}
+    W^{(l)} =
+    \left[ {\begin{array}{cccc}
+      w_{1,1} & w_{1,2} & \cdots & w_{1,m}\\
+      w_{2,1} & w_{2,2} & \cdots & w_{2n}\\
+      \vdots & \vdots & \ddots & \vdots\\
+      w_{n,1} & w_{n,2} & \cdots & w_{n,m}\\
+    \end{array} } \right]
+    \label{weights1}
+\end{equation}
+
+Which gives the weights of the synapses between layer $l$ and $l-1$. Combining this with a vector of biases for the same inter-layer, $b^{(l)}$, we are almost able to 
+calculate the values of the nodes in layer $l$. However before this can be done we need an activation function. In a lot of cases, as was found in \cite{act},
+the choice of activation function doesn't really matter. The most common choice is the ``sigmoid function'' defined in equation \ref{sig}.
+
+\begin{equation}
+    \label{sig}
+    \sigma(z) = \frac{1}{1+e^{-z}}
+\end{equation}
+
+Finally, piecing this all together, for the layer $l$, we get the values of the nodes in the layer using the matrix equation \ref{actMat}.
+
+\begin{equation}
+    \label{actMat}
+        a^{(l)} = \sigma(W^{(1)}a^{(l-1)} + \textbf{b}^{l})
+\end{equation}
+
+Where $a^{(l-1)}$ is the activation values for the previous layer, and $\sigma()$ is applied to all values in the resulting vector.

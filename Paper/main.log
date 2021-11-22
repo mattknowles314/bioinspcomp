@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.10.14)  22 NOV 2021 11:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.10.14)  22 NOV 2021 11:44
 entering extended mode
 **./main.tex
 (main.tex
@@ -322,34 +322,34 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count296
+ (sec1.tex
 
+LaTeX Warning: Citation `act' on page 1 undefined on input line 18.
 
-LaTeX Warning: Citation `act' on page 1 undefined on input line 50.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
-
- []
-
-
-LaTeX Warning: Citation `graddesc' on page 1 undefined on input line 73.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--75
+) (sec2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+LaTeX Warning: Citation `graddesc' on page 1 undefined on input line 7.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 [1{C:/Users/iikno/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-(main.bbl) [2] (main.aux)
+) (sec3.tex) (main.bbl) [2] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -358,10 +358,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5213 strings out of 478927
- 71833 string characters out of 2852534
+ 5228 strings out of 478927
+ 72106 string characters out of 2852534
  380578 words of memory out of 3000000
- 22859 multiletter control sequences out of 15000+600000
+ 22865 multiletter control sequences out of 15000+600000
  411843 words of font info for 59 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  71i,10n,80p,270b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -378,7 +378,7 @@ iikno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Users/iikno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y8.pfb><C:/Users/iikno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmti9.pfb>
-Output written on main.pdf (2 pages, 156264 bytes).
+Output written on main.pdf (2 pages, 158878 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

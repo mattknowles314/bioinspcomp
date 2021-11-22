@@ -1,0 +1,23 @@
+\section{Mathematical Background II: Backpropogation}
+The values in the network are initially random. The way the network learns is by an algorithm called ``backpropogation''.The idea is to define
+an error function: $$E(X,\theta) = \frac{1}{2N}\sum_{i=1}^N(y'_i-y_i)^2.$$ The parameter $\theta$ incorperates all the weights and biases, while X is 
+a vector of input values. The $y'_i$ term is the approximated value by the network, and $y_i$ is the actual value for the X vector. \\
+
+Given the number of parameters in this equation, finding minima is not as simple as simply taking a derivative. The method of minimising this 
+function is done using ``gradient descent''. As discussed in \cite{graddesc}, there are 3 varients of this algorithm. For a learning rate $\alpha$, we have
+the following variants. \\
+
+\begin{itemize}
+    \item Batch Gradient Descent: $ \theta =  \theta - \alpha \nabla_{\theta}E(X,\theta) $ \\
+    \item Mini-batch Gradient Descent (n training examples): $\theta = \theta - \alpha\nabla_{\theta}E(x^{(i:i+n)};y^{(i:i+n)};\theta)$ \\ 
+    \item Stochastic Gradient Descent (SGD): $\theta = \theta -\alpha \nabla_{\theta}E(x^{(i)};y^{(i)};\theta)$
+\end{itemize}
+
+SGD compares to Mini-batch by performing parameter updates for each training example. It is noted that mini-batch is the most common algorithm used in training neural networks. 
+One key issue is chosing the optimal learning rate $\alpha$. Too low, and convergence will take too long, too big and convergence won't be achieved. 
+
+Finally, for the $k^{th}$ layer, we update the weight between node i to j in layer $k+1$ via:
+
+\begin{equation}
+    \Delta w_{ij}^k = -\alpha \frac{\partial E(X,\theta)}{\partial w_{ij}^k}.
+\end{equation}
