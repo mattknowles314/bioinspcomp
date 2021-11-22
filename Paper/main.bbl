@@ -1,3 +1,13 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{act}
+P.~Sibi, S.~A. Jones, and P.~Siddarth, ``Analysis of different activation
+  functions using back propagation neural networks,'' {\em Journal of
+  theoretical and applied information technology}, vol.~47, no.~3,
+  pp.~1264--1268, 2013.
+
+\bibitem{graddesc}
+S.~Ruder, ``An overview of gradient descent optimization algorithms,'' {\em
+  arXiv preprint arXiv:1609.04747}, 2016.
 
 \end{thebibliography}

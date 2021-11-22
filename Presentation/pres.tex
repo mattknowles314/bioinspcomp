@@ -1,13 +1,12 @@
-
-\documentclass{beamer}
+\documentclass[11pt]{beamer}
 
 \usetheme{CambridgeUS}
-%\usecolortheme{albatross}
+\usecolortheme{dove}
 
 \usepackage{graphicx} 
 \usepackage{booktabs} 
 
-\title[ELE00017M]{ELE00017M Project} 
+\title[ELE00017M]{Automated Stock Trading using Neural Networks} 
 
 \author{Matthew Knowles} 
 \institute[UoY] 
@@ -26,27 +25,53 @@ University of York \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Overview} 
-\tableofcontents 
+\frametitle{Mathematical Underpinning of Neural Networks} 
+\begin{itemize}
+    \pause
+    \item Layers of nodes (perceptrons). $k$ ``hidden'' layers sandwiched by an input layer and an output layer. \\
+    \pause
+    \item Each node in layer j connects to each node in layer $j+1$. Connection is defined by a weight and a bias.  \\
+    \pause
+    \item Let the layer $k_i$ have m nodes, and the layer $k_i+1$ have n nodes. Then the weights between the layers are given by the matrix
+    \pause
+    \begin{equation}
+        W =
+        \left[ {\begin{array}{cccc}
+          w_{1,1} & w_{1,2} & \cdots & w_{1,m}\\
+          w_{2,1} & w_{2,2} & \cdots & w_{2n}\\
+          \vdots & \vdots & \ddots & \vdots\\
+          w_{n,1} & w_{n,2} & \cdots & w_{n,m}\\
+        \end{array} } \right]
+        \label{weights1}
+    \end{equation}
+    \pause
+    \item The values of the nodes in layer $k+1$, denoted $A_{(k+1)}$ is given by the matrix equation $A_{(k+1)} = WA_{(k)}+b_{(k)}$. Where
+        b is the vector containing the biases.
+\end{itemize}
 \end{frame}
 
-\section{Background}
 \begin{frame}
-\frametitle{Foo}
-Bar
+\frametitle{Backpropogation}
+    \begin{itemize} 
+    \pause
+    \item But how does this network learn? The answer: backpropogation! \\
+    \pause
+    \item Define an error function $E(X,\theta) = \frac{1}{2N}\sum_{i=1}^N(y'_i-y_i)^2$. Where $\theta$ incorperates the weights and biases. \\
+    \pause
+    \item The idea behind backpropogation is to find a local minimum of this function (called gradien descent).  We then updated the weights and biases
+        according to the differential of $E(X,\theta)$ with respect to each weight. For the $k^{th}$ layer, update the weight between node i in k to $j$ in $k+1$, we have:
+        \pause
+        \begin{equation}
+            \Delta w_{ij}^k = -\alpha \frac{\partial E(X,\theta)}{\partial w_{ij}^k}
+        \end{equation}. Where $\alpha$ is called the \textit{learning rate}.
+    \end{itemize}    
 \end{frame}
 
 
-\section{Verse 2}
+\section{Stock Price Prediction - Autonomous Trading}
 \begin{frame}
 \frametitle{Esketit}
 Oooh, lil pump
 \end{frame}
-
-\section{Conclusions}
-\begin{frame}
-\Huge{\centerline{Any Questions?}}
-\end{frame}
-
 
 \end{document} 

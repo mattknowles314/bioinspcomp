@@ -1,48 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-The style file: plain.bst
-I found no \citation commands---while reading file main.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 5 items.
 Database file #1: refs.bib
-You've used 0 entries,
-            2118 wiz_defined-function locations,
-            497 strings with 3985 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
+You've used 2 entries,
+            1876 wiz_defined-function locations,
+            489 strings with 3776 characters,
+and the built_in function-call counts, 536 in all, are:
+= -- 54
+> -- 15
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 6
+- -- 4
+* -- 37
+:= -- 82
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 2
+duplicate$ -- 28
+empty$ -- 51
+format.name$ -- 4
+if$ -- 127
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 9
+num.names$ -- 2
+pop$ -- 5
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 18
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 40
+swap$ -- 12
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 5
+width$ -- 3
+write$ -- 21

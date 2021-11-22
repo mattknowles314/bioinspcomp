@@ -22,7 +22,7 @@
 \newtheorem{example}[theorem]{Example}
 \newtheorem{lemma}[theorem]{Lemma}
 
-\title{Practical Applications of Evolutionary Algorithms}
+\title{Automated Stock Trading using Neural Networks}
 \author{Matthew Knowles}
 \date{Autumn Term 2021}
 
@@ -30,13 +30,73 @@
 
 \maketitle
 
-\section{Introduction}
-In this report...
+\section{Mathematical Background I: Activation}
+We first look at the mathematical background behind the neural network. Assume we have $k$ hidden layers, sandwiched by 
+an input layer and an output layer. Since the aim of neural networks is to model how a brain processes information, we often refer
+to the connections between nodes in each layer as ``synapses''. Theses synapses are characterised by their weights and biases. Let $W^{(l)}$ be the 
+matrix containing the weights between layer $l$ and $l-1$. If layer l has n nodes, and $l-1$ has m nodes, then we have:
+\begin{equation}
+    W^{(l)} =
+    \left[ {\begin{array}{cccc}
+      w_{1,1} & w_{1,2} & \cdots & w_{1,m}\\
+      w_{2,1} & w_{2,2} & \cdots & w_{2n}\\
+      \vdots & \vdots & \ddots & \vdots\\
+      w_{n,1} & w_{n,2} & \cdots & w_{n,m}\\
+    \end{array} } \right]
+    \label{weights1}
+\end{equation}
 
-\section{Literature Review}
-hahah idk what im doing
+Which gives the weights of the synapses between layer $l$ and $l-1$. Combining this with a vector of biases for the same inter-layer, $b^{(l)}$, we are almost able to 
+calculate the values of the nodes in layer $l$. However before this can be done we need an activation function. In a lot of cases, as was found in \cite{act},
+the choice of activation function doesn't really matter. The most common choice is the ``sigmoid function'' defined in equation \ref{sig}.
 
-\bibliography{refs}{}
-\bibliographystyle{plain}
+\begin{equation}
+    \label{sig}
+    \sigma(z) = \frac{1}{1+e^{-z}}
+\end{equation}
+
+Finally, piecing this all together, for the layer $l$, we get the values of the nodes in the layer using the matrix equation \ref{actMat}.
+
+\begin{equation}
+    \label{actMat}
+        a^{(l)} = \sigma(W^{(1)}a^{(l-1)} + \textbf{b}^{l})
+\end{equation}
+
+Where $a^{(l-1)}$ is the activation values for the previous layer, and $\sigma()$ is applied to all values in the resulting vector.
+
+\section{Mathematical Background II: Backpropogation}
+The values in the network are initially random. The way the network learns is by an algorithm called ``backpropogation''.The idea is to define
+an error function: $$E(X,\theta) = \frac{1}{2N}\sum_{i=1}^N(y'_i-y_i)^2.$$ The parameter $\theta$ incorperates all the weights and biases, while X is 
+a vector of input values. The $y'_i$ term is the approximated value by the network, and $y_i$ is the actual value for the X vector. \\
+
+Given the number of parameters in this equation, finding minima is not as simple as simply taking a derivative. The method of minimising this 
+function is done using ``gradient descent''. As discussed in \cite{graddesc}, there are 3 varients of this algorithm. For a learning rate $\alpha$, we have
+the following variants. \\
+
+\begin{itemize}
+    \item Batch Gradient Descent: $ \theta =  \theta - \alpha \nabla_{\theta}E(X,\theta) $ \\
+    \item Mini-batch Gradient Descent (n training examples): $\theta = \theta - \alpha\nabla_{\theta}E(x^{(i:i+n)};y^{(i:i+n)};\theta)$ \\ 
+    \item Stochastic Gradient Descent (SGD): $\theta = \theta -\alpha \nabla_{\theta}E(x^{(i)};y^{(i)};\theta)$
+\end{itemize}
+
+SGD compares to Mini-batch by performing parameter updates for each training example. It is noted that mini-batch is the most common algorithm used in training neural networks. 
+One key issue is chosing the optimal learning rate $\alpha$. Too low, and convergence will take too long, too big and convergence won't be achieved. 
+
+\section{Why use Neural Networks in Stock Trading?}
+foofoo
+
+\section{How do we use Neural Networks in Stock Trading?}
+barbar
+
+\section{Improvements to Automated Trading}
+foofoobarbar
+
+\section{Conclusion}
+barbarfoofoo
+
+
+
+\bibliographystyle{ieeetr}
+\bibliography{refs}
 
 \end{document}
