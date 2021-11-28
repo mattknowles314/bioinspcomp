@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{act}
+P.~Sibi, S.~A. Jones, and P.~Siddarth, ``Analysis of different activation
+  functions using back propagation neural networks,'' {\em Journal of
+  theoretical and applied information technology}, vol.~47, no.~3,
+  pp.~1264--1268, 2013.
+
+\bibitem{graddesc}
+S.~Ruder, ``An overview of gradient descent optimization algorithms,'' {\em
+  arXiv preprint arXiv:1609.04747}, 2016.
+
+\bibitem{burrell}
+P.~R. Burrell and B.~O. Folarin, ``The impact of neural networks in finance,''
+  {\em Neural Computing \& Applications}, vol.~6, no.~4, pp.~193--200, 1997.
+
+\bibitem{kimoto}
+T.~Kimoto, K.~Asakawa, M.~Yoda, and M.~Takeoka, ``Stock market prediction
+  system with modular neural networks,'' in {\em 1990 IJCNN international joint
+  conference on neural networks}, pp.~1--6, IEEE, 1990.
+
+\bibitem{adebiyi}
+A.~A. Adebiyi, A.~O. Adewumi, and C.~K. Ayo, ``Comparison of arima and
+  artificial neural networks models for stock price prediction,'' {\em Journal
+  of Applied Mathematics}, vol.~2014, 2014.
+
+\bibitem{adewumi}
+A.~Adewumi and A.~Moodley, ``Comparative results of heuristics for portfolio
+  selection problem,'' in {\em 2012 IEEE Conference on Computational
+  Intelligence for Financial Engineering \& Economics (CIFEr)}, pp.~1--6, IEEE,
+  2012.
+
+\bibitem{kim}
+K.-j. Kim and I.~Han, ``Genetic algorithms approach to feature discretization
+  in artificial neural networks for the prediction of stock price index,'' {\em
+  Expert systems with Applications}, vol.~19, no.~2, pp.~125--132, 2000.
+
+\end{thebibliography}

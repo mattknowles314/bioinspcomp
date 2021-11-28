@@ -62,16 +62,75 @@ University of York \\
         according to the differential of $E(X,\theta)$ with respect to each weight. For the $k^{th}$ layer, update the weight between node i in k to $j$ in $k+1$, we have:
         \pause
         \begin{equation}
-            \Delta w_{ij}^k = -\alpha \frac{\partial E(X,\theta)}{\partial w_{ij}^k}
-        \end{equation}. Where $\alpha$ is called the \textit{learning rate}.
+            \Delta w_{ij}^k = -\alpha \frac{\partial E(X,\theta)}{\partial w_{ij}^k}.
+        \end{equation} Where $\alpha$ is called the \textit{learning rate}.
     \end{itemize}    
 \end{frame}
 
 
-\section{Stock Price Prediction - Autonomous Trading}
 \begin{frame}
-\frametitle{Esketit}
-Oooh, lil pump
+\frametitle{Why use Neural Networks for Stock Trading?}
+    \begin{itemize}
+        \item Improvements on historical trading methods. Primarily using a companies ``fundamentals''. \\
+        \pause
+        \item Too many of these to identify which ones are important/irerlevant. \\
+        \pause
+        \item Financial Data is very dense. It is too complex for a human analyst, so NNs can be used to 
+            comb through  immense amount of data and identify patterns useful for trading. \\
+        \pause 
+        \item Key issue: The networks can't explain \textit{why} they make the decisions they do. This can make it hard 
+            for financial engineers to work out what's gone wrong if something does.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{How do we use Neural Networks for Stock Trading}
+    \begin{itemize}
+        \item Two main ways: ``signalling'' and ``prediction''. \\
+        \pause
+        \item 
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.3]{../Paper/aapl.PNG}
+            \caption{Signalling technique: Black = Buy, Red= Sell}
+        \end{figure}
+        \pause
+        \item Can maximise the amount of profit that can be made from one stock rather than buy and hold. \\
+        \pause
+        \item The second method uses NNs to predict a value of the stock at a future time. \\
+        \pause
+        \item This allows investors to make an informed choice on which stocks to put money in.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Improvements to Automated Trading}
+\begin{itemize}
+    \item \textbf{Chosing which stocks to use these automated methods on}: Genetic Algorithms for selecting a portfolio. \\
+    \pause
+    \item \textbf{Data}: Every day, more data is added to the pool of training data that these models are trained on. \\
+    \pause
+    \item \textbf{Improving the networks themselves}: Use of genetic algorithms and improved training algorithms for finding 
+        an optimal set of weights. Roughly $10\%$ improvement. (Kim et. al, 2000) \footnote{\tiny K.-j. Kim and I. Han, “Genetic algorithms approach to feature discretization in artificial neural networks for
+        the prediction of stock price index,” Expert systems with Applications, vol. 19, no. 2, pp. 125–132, 2000.}
+    \pause 
+    \item \textbf{Reducing Dimensionallity}: Financial data is very complex. Reducing dimensionality to focus on the most important 
+        features of the data- reducing training time and memory used by the system.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Conclusion}
+    \begin{itemize}
+        \item These methods are being employed by investment firms and banks daily to turn a profit from the world's stock exchanges. \\
+        \pause
+        \item Has made a vast improvement on the old fundamental methods that traders used. \\
+        \pause
+        \item Provides a wonderful testbed for pattern recognition techniques due to wealth of data. \\
+        \pause
+        \item Tehcniques used here can be applied to other areas related to time-series data. Such as looking at how populations of animals change 
+            over time. 
+    \end{itemize}
 \end{frame}
 
 \end{document} 

@@ -2,7 +2,7 @@
 We first look at the mathematical background behind the neural network. Assume we have $k$ hidden layers, sandwiched by 
 an input layer and an output layer. Since the aim of neural networks is to model how a brain processes information, we often refer
 to the connections between nodes in each layer as ``synapses''. Theses synapses are characterised by their weights and biases. Let $W^{(l)}$ be the 
-matrix containing the weights between layer $l$ and $l-1$. If layer l has n nodes, and $l-1$ has m nodes, then we have:
+matrix containing the weights between layer $l$ and $l-1$. If layer l has n nodes, and $l-1$ has m nodes, then we have: \\
 \begin{equation}
     W^{(l)} =
     \left[ {\begin{array}{cccc}
@@ -27,7 +27,7 @@ Finally, piecing this all together, for the layer $l$, we get the values of the 
 
 \begin{equation}
     \label{actMat}
-        a^{(l)} = \sigma(W^{(1)}a^{(l-1)} + \textbf{b}^{l})
+        a^{(l)} = \sigma(W^{(1)}a^{(l-1)} + b^{l})
 \end{equation}
 
 Where $a^{(l-1)}$ is the activation values for the previous layer, and $\sigma()$ is applied to all values in the resulting vector.

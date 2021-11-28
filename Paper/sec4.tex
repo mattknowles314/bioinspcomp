@@ -1,0 +1,29 @@
+\section{How do we use Neural Networks in Stock Trading?}
+
+\subsection{Buy-Hold-Sell Signalling}
+We use the paper by Kimoto, \cite{kimoto} to examine this method. The idea can be visualised in figure \ref{appl}.
+
+\begin{figure}[h]
+    \centering
+    \label{aapl}
+    \includegraphics[scale=0.5]{aapl.PNG}
+    \caption{\$AAPL Stock with ideal buy (black) and sell (red) indicators}
+\end{figure}
+
+The technique is to train a neural network to predict when it should buy or sell based on past behaviour of the stock. This can lead to 
+continuing profit over a training window.  The model in \cite{kimoto} uses  a 3-layer network, with only one hidden layer. The input of the network takes
+a vector curve- showing how the stock has moved in the past, the turnover, domestic interest rate, foreign exchange rate, the New York Dow-Jones average and any 
+other metrics at the investors will.\\
+
+The authors found this method to be more profitable than simply buying and holding the stock. 
+
+\subsection{Value Prediction}
+As opposed to the previous method for directly making profit by letting the model itself trade on a stock market, this method is used for 
+trying to predict the price of a stock at some future time, thus allowing an investor to either buy and hold, or go short on the stock, making a profit if the stock 
+price falls. \\
+
+In one study, \cite{adebiyi}, the authors compare a neural network model to an ARIMA (Auto-Regregressive Integrated Moving Average) model for price 
+prediction.  For the experiment, they ran different network configurations, with a different range of iterations for the training. The authors found
+that while both gave good forecast results, but the neural network did outperform the ARIMA model overall. 
+
+This method is suitable for informing investment decisions, however not so much for autnomously trading.
