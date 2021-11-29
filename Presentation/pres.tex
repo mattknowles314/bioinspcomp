@@ -45,8 +45,8 @@ University of York \\
         \label{weights1}
     \end{equation}
     \pause
-    \item The values of the nodes in layer $k+1$, denoted $A_{(k+1)}$ is given by the matrix equation $A_{(k+1)} = WA_{(k)}+b_{(k)}$. Where
-        b is the vector containing the biases.
+    \item The values of the nodes in layer $k+1$, denoted $A_{(k+1)}$ is given by the matrix equation $A_{(k+1)} = \sigma(WA_{(k)}+b_{(k)})$. Where
+        b is the vector containing the biases, and $\sigma()$ is the \textit{activation function}.
 \end{itemize}
 \end{frame}
 
@@ -58,7 +58,7 @@ University of York \\
     \pause
     \item Define an error function $E(X,\theta) = \frac{1}{2N}\sum_{i=1}^N(y'_i-y_i)^2$. Where $\theta$ incorperates the weights and biases. \\
     \pause
-    \item The idea behind backpropogation is to find a local minimum of this function (called gradient descent).  We then updated the weights and biases
+    \item The idea behind backpropogation is to find a local minimum of this function.  We then update the weights and biases
         according to the differential of $E(X,\theta)$ with respect to each weight. For the $k^{th}$ layer, update the weight between node i in k to $j$ in $k+1$, we have:
         \pause
         \begin{equation}

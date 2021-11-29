@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1637922882 "c:/Users/iikno/Documents/bioinspcomp/Presentation/pres.tex" "pres.pdf" "pres" 1637922888
+["pdflatex"] 1638105021 "c:/Users/iikno/Documents/bioinspcomp/Presentation/pres.tex" "pres.pdf" "pres" 1638106032
   "../Paper/aapl.PNG" 1637666820 32321 0de5eed76b9dc5949c4783935e010da2 ""
   "C:/Users/iikno/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1634195332 9715385 211c81815fd6d290e12bcf6f272cd2c1 ""
   "C:/Users/iikno/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1637751797 81116 dbcbff3cc11849e73194397f26e54a77 ""
@@ -208,16 +208,16 @@
   "C:/Users/iikno/AppData/Local/Programs/MiKTeX/tex/latex/translator/translator.sty" 1622467910 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/iikno/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/iikno/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623002060 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/iikno/Documents/bioinspcomp/Presentation/pres.tex" 1637922887 5587 8c03ef7bebf085cb192849154d3baf2d ""
-  "pres.aux" 1637922885 1975 55308443b5a82cbf9cd9867245fb343f "pdflatex"
-  "pres.nav" 1637922885 857 c2d2c16b8abe931a3e218aaf2eedd1a1 "pdflatex"
-  "pres.out" 1637922884 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "pres.tex" 1637922887 5587 8c03ef7bebf085cb192849154d3baf2d ""
+  "c:/Users/iikno/Documents/bioinspcomp/Presentation/pres.tex" 1638106031 5620 990e145a30e0e7324db9beb3846c457b ""
+  "pres.aux" 1638105031 1975 55308443b5a82cbf9cd9867245fb343f "pdflatex"
+  "pres.nav" 1638105031 857 c2d2c16b8abe931a3e218aaf2eedd1a1 "pdflatex"
+  "pres.out" 1638105030 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "pres.tex" 1638106031 5620 990e145a30e0e7324db9beb3846c457b ""
   (generated)
   "pres.pdf"
   "pres.toc"
-  "pres.out"
   "pres.aux"
+  "pres.out"
   "pres.snm"
   "pres.nav"
   "pres.log"
